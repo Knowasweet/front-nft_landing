@@ -1,0 +1,93 @@
+.popular {
+  margin-top: 170px;
+  background-image: url('../img/popular-bg-effect.png');
+  background-repeat: no-repeat;
+  background-position: 0 -50px;
+  background-size: contain;
+
+  @media(max-width: 600px) {
+    margin-top: 0;
+  }
+
+  .auctions__img {
+    img {
+      max-height: 270px;
+    }
+  }
+
+  .auction__profile {
+    margin-bottom: 0;
+  }
+
+  .auctions-profile__nickname {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 36px;
+    color: $white2;
+
+    @media(max-width: 900px) {
+      font-size: 17px;
+    }
+  }
+
+  .auctions-profile__likes {
+    span {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 35px;
+      color: $pink2;
+    }
+  }
+
+}
+
+.popular__main {
+  position: relative;
+  padding-top: 70px;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 10%;
+    right: 0;
+    width: 200px;
+    height: 65%;
+    background: linear-gradient(to left, rgba(black, .7), rgba(black, 0));
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    z-index: 2;
+  }
+
+  @media(max-width: 600px) {
+    padding-top: 0;
+
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.popular-slider {
+  padding: 0 !important;
+}
+
+.swiper-button-prev2,
+.swiper-button-next2 {
+  top: 40%;
+  transform: translateY(-50%);
+}
+
+.swiper-button-prev2 {
+  left: 0;
+}
+
+.swiper-button-next2 {
+  right: 0;
+}
+
+.swiper-button-prev2.swiper-button-disabled,
+.swiper-button-next2.swiper-button-disabled {
+  display: none;
+  cursor: auto;
+  pointer-events: none;
+}

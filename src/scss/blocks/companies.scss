@@ -1,0 +1,38 @@
+.companies {
+  margin: 195px 0 0;
+  padding-bottom: 104px;
+  background: url("../img/auctions-bg-effect.png");
+  background-repeat: no-repeat;
+  background-position: 0 50px;
+
+  @media(max-width: 1100px) {
+    background: none;
+  }
+
+  @media(max-width: 850px) {
+    margin: 75px 0 0;
+    padding-bottom: 75px;
+  }
+
+  @media(max-width: 600px) {
+    margin: 20px 0 0;
+    padding-bottom: 20px;
+  }
+}
+
+.companies__main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 0 20px;
+
+  img {
+    width: 18%;
+
+    @media(max-width: 900px) {
+      width: 33%;
+    }
+  }
+
+}
